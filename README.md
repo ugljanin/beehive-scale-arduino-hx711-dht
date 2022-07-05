@@ -34,9 +34,9 @@ Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into the "
 Once hardware is prepared, and Arduino IDE is configured, open `beehive-scale.ino` in Arduino, connect your device with a usb cable to your computer, choose com port that is used, make sure you selected correct board as instructed above.
 
 Configure in the scatch:
-- WiFi parameters
-- Calibration factor and zero factor to make sure scale will measure correctly
-- ThingSpeak channel number and write API
+- WiFi parameters `ssid` and `password`
+- Calibration factor `calibrationFactor` and zero factor `zeroFactor` to make sure scale will measure correctly
+- ThingSpeak channel number `myChannelNumber` and write API `myWriteAPIKey`
 - Double check if you are using same pin numbers for led diods and DHT and HX711 sensors.
 
 When all is done `upload` scatch on your board. You can monitor debug messages in your Serial Minitor inside Arduino IDE, and make sure all work as expected.

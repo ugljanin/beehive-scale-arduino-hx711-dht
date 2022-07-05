@@ -5,8 +5,8 @@
 
 const char *myWriteAPIKey = "WRITEYOUROWN"; // You will retrieve this key from ThingSpeak platform
 unsigned long myChannelNumber = 0;          // Channel number from ThingSpeak
-float calibration_factor = 0;               // Calibration factor is different for each scale and depends on the weight
-float zero_factor = 0;                      // Same as calibration factor
+float calibrationFactor = 0;                // Calibration factor is different for each scale and depends on the weight
+float zeroFactor = 0;                       // Same as calibration factor
 
 const int LOADCELL_DOUT_PIN = D2;
 const int LOADCELL_SCK_PIN = D3;
@@ -46,7 +46,7 @@ void setup()
     Serial.print("Read average: \t\t");
     Serial.println(scale.read_average(20)); // print the average of 20 readings from the ADC
 
-    scale.set_scale(calibration_factor); // This value is obtained by using the SparkFun_HX711_Calibration sketch
+    scale.set_scale(calibrationFactor); // This value is obtained by using the SparkFun_HX711_Calibration sketch
     scale.set_offset(zero_factor);       // Zero out the scale using a previously known zero_factor
     //  scale.tare();                // reset the scale to 0
 
