@@ -61,5 +61,5 @@ When all is done `upload` scatch on your board. You can monitor debug messages i
 
 For monitoring you can use web based tool on ThingSpeak, or install free version of mobile app for Android or Iphone. Free version is limited in some functionalities, and if you want to have more details you can purchase full version. This is a screenshot from full version for Iphone.
 
-![thingview iphone app](images/thingview-iphone.jpeg)
+![thingview iphone app](images/thingview-landscape.jpeg)
 
