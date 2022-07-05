@@ -19,6 +19,22 @@ Scale is made of steel pipes which are connected with load cell sensor (up to 10
 
 ![Load cell](images/load-cell.png)
 
+## Connect HX711 to Wemos
+
+gnd - gnd
+dt - d2
+sck - d3
+vcc - 5v
+
+In my case load cell had 4 wires (white, black, green and red) and I connected it to HX711 this way
+
+black -> e+
+white -> e-
+green -> a-
+red -> a+
+
+![HX711](images/HX711.png)
+
 # Configuring Arduino IDE
 
 1. To enable support for ESP8266 devices, you first need to go to `File > Preferences`.
@@ -29,9 +45,9 @@ Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into the "
 
 3. Install `ESP8266` library by going to `Scatch > Include library > Manage Libraries`, search for `ESP8266 by ESP8266 Community` and install it.
 
-# Uploading script
+# Uploading script on the Wemos D1 mini device
 
-Once hardware is prepared, and Arduino IDE is configured, open `beehive-scale.ino` in Arduino, connect your device with a usb cable to your computer, choose com port that is used, make sure you selected correct board as instructed above.
+Once hardware is prepared, and Arduino IDE is configured, open `beehive-scale.ino` in Arduino, connect your device with a usb cable to your computer, choose `com port` that is used for your device, make sure you selected correct board as instructed above.
 
 Configure in the scatch:
 - WiFi parameters `ssid` and `password`
