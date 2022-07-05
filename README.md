@@ -17,14 +17,16 @@ Power source with 5v is need, I used car battery that has 12v and purchased conv
 
 Scale is made of steel pipes which are connected with load cell sensor (up to 100KG) that contains strain gauge.
 
+![Load cell](images/load-cell.png)
+
 # Configuring Arduino IDE
 
-1. To enable support for ESP8266 devices, you first need to go to *File>Preferences* .
+1. To enable support for ESP8266 devices, you first need to go to `File > Preferences`.
 Enter http://arduino.esp8266.com/stable/package_esp8266com_index.json into the "Additional Boards Manager URLs" field as shown in the figure below. Then, click the "OK" button:
 ![Configuring Arduino](images/Install-ESP8266-Board-add-on-in-Arduino-IDE-enter-URL.png)
 
-2. Go to `Tools>Board` and select Lolin(Wemos) D1 mini.
+2. Go to `Tools > Board` and select Lolin(Wemos) D1 mini.
 
-3. Install `ESP8266` library by going to `Scatch>Include library>Manage Libraries`, search for `ESP8266 by ESP8266 Community` and install it.
+3. Install `ESP8266` library by going to `Scatch > Include library > Manage Libraries`, search for `ESP8266 by ESP8266 Community` and install it.
 
 
