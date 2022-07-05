@@ -21,17 +21,17 @@ Scale is made of steel pipes which are connected with load cell sensor (up to 10
 
 ## Connect HX711 to Wemos
 
-gnd - gnd
-dt - d2
-sck - d3
-vcc - 5v
+- gnd -> gnd
+- dt -> d2
+- sck -> d3
+- vcc -> 5v
 
 In my case load cell had 4 wires (white, black, green and red) and I connected it to HX711 this way
 
-black -> e+
-white -> e-
-green -> a-
-red -> a+
+- black -> e+
+- white -> e-
+- green -> a-
+- red -> a+
 
 ![HX711](images/HX711.png)
 
