@@ -57,3 +57,9 @@ Configure in the scatch:
 
 When all is done `upload` scatch on your board. You can monitor debug messages in your Serial Minitor inside Arduino IDE, and make sure all work as expected.
 
+# Monitoring measurements
+
+For monitoring you can use web based tool on ThingSpeak, or install free version of mobile app for Android or Iphone. Free version is limited in some functionalities, and if you want to have more details you can purchase full version. This is a screenshot from full version for Iphone.
+
+![thingview iphone app](images/thingview-iphone.jpeg)
+
