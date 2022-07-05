@@ -19,6 +19,10 @@ Scale is made of steel pipes which are connected with load cell sensor (up to 10
 
 ![Load cell](images/load-cell.png)
 
+## Load Cell calibration
+
+Once you connect Load Cell to the scale, you need to calibrate the Load Cell. For calibration you will use `calibration.ino` scatch, where you will load some known weight on your scale and follow instructions from the code.
+
 ## Connect HX711 to Wemos
 
 - gnd -> gnd
